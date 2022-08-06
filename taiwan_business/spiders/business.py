@@ -12,7 +12,7 @@ class BusinessSpider(scrapy.Spider):
 
     # overwrite start_requests method
     def start_requests(self):
-        for i in range(301,365):
+        for i in range(1,365):
             time.sleep(1)
             url = "http://rank.twincn.com/default.aspx?q=&page={}".format(i)
             headers = {'User-Agent' :'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2049.0 Safari/537.36',
